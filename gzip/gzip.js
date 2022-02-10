@@ -8,7 +8,7 @@ if (!filePath) {
     return;
 }
 
-const zipFileName = path.basename(filePath, '.txt') + '.zip'
+const zipFileName = path.basename(filePath, '.txt') + '.gz'
 const zipFilePath = path.join(__dirname, zipFileName);
 
 fs.createReadStream(filePath)
