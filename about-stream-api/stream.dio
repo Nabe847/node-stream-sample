@@ -1,0 +1,37 @@
+<mxfile host="65bd71144e">
+    <diagram id="AndBUWdIj3jbZ2i9RgbX" name="Page-1">
+        <mxGraphModel dx="988" dy="729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Readable&lt;br&gt;(Data Source)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="34" y="208" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Writable&lt;br&gt;(Destination)&lt;br&gt;&lt;br&gt;highWaterMark" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+                    <mxGeometry x="314" y="210" width="160" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.012;entryY=0.161;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2" target="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="404" y="400" as="sourcePoint"/>
+                        <mxPoint x="454" y="350" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="Internal Buffer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="334" y="300" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="内部バッファのサイズはhighWaterMarkで決まる" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="514" y="70" width="280" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="内部バッファのサイズがhighWaterMarkを超えるとwriteメソッドの戻り値がfalseになる。&lt;br&gt;内部バッファに空きができるとdrainイベントが発火し、書き込みを再開することができるようになる&lt;br&gt;&lt;span style=&quot;color: rgba(0 , 0 , 0 , 0) ; font-family: monospace ; font-size: 0px&quot;&gt;ふ%3CmxGraphModel%3E%3Croot%3E%3CmxCell%20id%3D%220%22%2F%3E%3CmxCell%20id%3D%221%22%20parent%3D%220%22%2F%3E%3CmxCell%20id%3D%222%22%20value%3D%22%E5%86%85%E9%83%A8%E3%83%90%E3%83%83%E3%83%95%E3%82%A1%E3%81%AE%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AFhighWaterMark%E3%81%A7%E6%B1%BA%E3%81%BE%E3%82%8B%22%20style%3D%22rounded%3D0%3BwhiteSpace%3Dwrap%3Bhtml%3D1%3B%22%20vertex%3D%221%22%20parent%3D%221%22%3E%3CmxGeometry%20x%3D%22730%22%20y%3D%22190%22%20width%3D%22280%22%20height%3D%2250%22%20as%3D%22geometry%22%2F%3E%3C%2FmxCell%3E%3C%2Froot%3E%3C%2FmxGraphModel%3E&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="514" y="140" width="280" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="readable event" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=40;position=0.25;position2=0.25;base=20;" vertex="1" parent="1">
+                    <mxGeometry x="100" y="100" width="120" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="drain event" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;size=40;position=0.25;position2=0.25;base=20;" vertex="1" parent="1">
+                    <mxGeometry x="370" y="108" width="120" height="100" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
