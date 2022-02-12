@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Nabe847/node-stream-sample#readme",
   "dependencies": {
-    "chance": "^1.1.8"
+    "chance": "^1.1.8",
+    "mkdirp": "^1.0.4"
   }
 }
