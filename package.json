@@ -1,0 +1,23 @@
+{
+  "name": "node-stream-sample",
+  "version": "1.0.0",
+  "description": "Sample programs related to the Node.js stream API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nabe847/node-stream-sample.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nabe847/node-stream-sample/issues"
+  },
+  "homepage": "https://github.com/Nabe847/node-stream-sample#readme",
+  "dependencies": {
+    "chance": "^1.1.8"
+  }
+}
